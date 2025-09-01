@@ -1,0 +1,131 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: jekyll-rpi-khk
+description: >- # this means to ignore newlines until "baseurl:"
+  Documentation for successfully operating Kappa Eta Kappa at UW-Madison.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Links at the top
+chapter-name: "Delta Chapter"
+chapter-link: https://delta.khk.org/
+alumni-link: https://daa.khk.org/
+nav-list-right:
+  - title: UW-Madison
+    url: https://www.wisc.edu/
+  - title: CoE
+    url: https://engineering.wisc.edu/
+  - title: CDIS
+    url: https://cdis.wisc.edu/
+  - title: Google Drive
+    url: https://drive.google.com/drive
+
+# Links below the table of contents
+toc-links:
+  - title: RSO Policies
+    url: https://guide.soli.wisc.edu/policies/
+  - title: University Room Reservations
+    url: https://guide.soli.wisc.edu/reserving-space/
+  - title: Engineering Room Reservations
+    url: https://kb.wisc.edu/cae/page.php?id=60661
+
+
+# Social media links
+link-facebook: https://www.facebook.com/khk.delta
+link-instagram: https://www.instagram.com/khkdelta/
+link-linkedin: https://www.linkedin.com/groups/987477/
+link-github: https://github.com/kappaetakappa
+link-twitter: https://twitter.com/khkdelta
+link-email: mailto:webmaster@delta.khk.org
+
+# University links
+university-links:
+  - title: UW-Madison
+    url: https://www.wisc.edu/
+  - title: College of Engineering
+    url: https://engineering.wisc.edu/
+  - title: "School of Computer, Data & Information Sciences"
+    url: https://cdis.wisc.edu/
+  - title: Student Affairs
+    url: https://students.wisc.edu/
+  - title: Academic Calendar
+    url: "https://secfac.wisc.edu/academic-calendar/"
+
+# Student organization links
+rso-links:
+  - title: "Office for Student Organizations, Leadership & Involvement"
+    url: https://guide.soli.wisc.edu/
+  - title: Wisconsin Involvement Network
+    url: https://win.wisc.edu/
+  - title: Wisconsin Union
+    url: https://union.wisc.edu/
+  - title: "Office of Student Conduct and Community Standards"
+    url: https://conduct.students.wisc.edu/
+  - title: Report Nonacademic Misconduct
+    url: "https://cm.maxient.com/reportingform.php?UnivofWisconsinMadison&layout_id=0"
+  - title: Report Violation of Conduct Policy
+    url: "https://cm.maxient.com/reportingform.php?UnivofWisconsinMadison&layout_id=40"
+
+# Resource links
+resource-links:
+  - title: Dean of Students
+    url: https://osas.wisc.edu/
+  - title: University Health Services
+    url: https://www.uhs.wisc.edu/
+  - title: RecWell
+    url: https://recwell.wisc.edu/
+  - title: Report an Issue
+    url: https://osas.wisc.edu/report-an-issue/
+  - title: Report Hazing
+    url: https://osas.wisc.edu/report-an-issue/report-hazing/
+
+# Copyright text to display at the bottom of each page
+# The phrase "Copyright (c) <YEAR>" is prepended to this string
+# Where <YEAR> automatically updates with the current year
+copyright-text: "Kappa Eta Kappa. All rights reserved."
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+

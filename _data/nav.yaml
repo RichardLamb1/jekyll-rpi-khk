@@ -1,0 +1,34 @@
+- path: /docs
+  title: "Documentation"
+  toc:
+  - path: /docs/getting-started
+    title: "Getting Started"
+    sections:
+    - anchor: first-subheading
+      heading: "First Subheading"
+    - anchor: second-subheading
+      heading: "Second Subheading"
+    - anchor: third-subheading
+      heading: "Third Subheading"
+  - path: /docs/end
+    title: "The End"
+    sections:
+    - anchor: first-subheading
+      heading: "First Subheading"
+    - anchor: second-subheading
+      heading: "Second Subheading"
+    - anchor: third-subheading
+      heading: "Third Subheading"
+
+- path: /pages
+  title: "Additional Pages"
+  toc:
+  - path: /pages/sample-page
+    title: "Sample Page"
+    sections:
+    - anchor: h2
+      heading: "H2"
+    - anchor: code
+      heading: "Code"
+    - anchor: blockquotes
+      heading: "Blockquotes"

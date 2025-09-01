@@ -1,0 +1,398 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+#__rptl-header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  font-weight: 400;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 100;
+}
+#__rptl-header .__rptl-header-wrapper {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#__rptl-header .__rptl-header-navbar {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  background-color: var(--rptl-header-background-color, #fff);
+  border-bottom: 1px solid var(--rptl-header-border-bottom-color, #dedede);
+  width: 100%;
+  padding: 16px;
+}
+@media (min-width: 800px) {
+  #__rptl-header .__rptl-header-navbar {
+    padding: 16px 76px;
+  }
+}
+@media (min-width: 1200px) {
+  #__rptl-header .__rptl-header-navbar {
+    padding: 16px 84px;
+    border-bottom-style: none;
+  }
+}
+#__rptl-header .__rptl-header-brand {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+}
+#__rptl-header .__rptl-header-logo {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+#__rptl-header .__rptl-header-logo-text {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  height: 34px;
+  padding-left: 10px;
+  color: var(--textcolor);
+  font-weight: bolder;
+  font-size: 34px;
+}
+#__rptl-header .__rptl-header-burger {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (min-width: 1200px) {
+  #__rptl-header .__rptl-header-burger {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #__rptl-header .__rptl-header-burger {
+    transition: 0.5s ease-in-out;
+  }
+}
+#__rptl-header .__rptl-header-burger-stroke {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--rptl-header-burger-stroke-color, #707070);
+  border-radius: 9px;
+  transform: rotate(0deg);
+}
+#__rptl-header .__rptl-header-burger-stroke:nth-child(1) {
+  top: 0;
+  transform-origin: left center;
+}
+#__rptl-header .__rptl-header-burger-stroke:nth-child(2) {
+  top: 14px;
+  transform-origin: left center;
+}
+#__rptl-header .__rptl-header-burger-stroke:nth-child(3) {
+  top: 28px;
+  transform-origin: left center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  #__rptl-header .__rptl-header-burger-stroke {
+    transition: 0.25s ease-in-out;
+  }
+}
+#__rptl-header .__rptl-header-burger-state {
+  display: none;
+}
+#__rptl-header .__rptl-header-burger-state:checked + .__rptl-header-navbar .__rptl-header-burger-stroke:nth-child(1) {
+  transform: rotate(45deg);
+  top: 4.5px;
+  left: 4.5px;
+}
+#__rptl-header .__rptl-header-burger-state:checked + .__rptl-header-navbar .__rptl-header-burger-stroke:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+#__rptl-header .__rptl-header-burger-state:checked + .__rptl-header-navbar .__rptl-header-burger-stroke:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 25.5px;
+  left: 4.5px;
+}
+#__rptl-header .__rptl-header-burger-state:checked ~ .__rptl-header-nav {
+  transform: translateY(100%);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+#__rptl-header .__rptl-header-nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--rptl-header-background-color, #fff);
+  width: 100%;
+  border-bottom: 1px solid var(--rptl-header-border-bottom-color, #dedede);
+}
+#__rptl-header .__rptl-header-nav:focus-within {
+  transform: translateY(100%);
+}
+@media (min-width: 1200px) {
+  #__rptl-header .__rptl-header-nav {
+    position: static;
+    padding: 0 84px;
+    background-color: var(--rptl-header-subnav-background-color, #f7f8fa);
+    transform: none !important;
+    transition: none !important;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #__rptl-header .__rptl-header-nav {
+    transition: transform 0.25s ease-in;
+  }
+}
+#__rptl-header .__rptl-header-nav-inner {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+@media (min-width: 1200px) {
+  #__rptl-header .__rptl-header-nav-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+#__rptl-header .__rptl-header-nav-list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  list-style: none;
+  display: block;
+  box-sizing: border-box;
+}
+#__rptl-header .__rptl-header-nav-list:first-child .__rptl-header-nav-list-item:first-child {
+  border: 0;
+}
+#__rptl-header .__rptl-header-nav-list-item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-top: 1px solid var(--rptl-header-border-bottom-color, #dedede);
+}
+@media (min-width: 1200px) {
+  #__rptl-header .__rptl-header-nav-list-item {
+    display: inline-block;
+    border-style: none;
+  }
+}
+#__rptl-header .__rptl-header-nav-link {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--rptl-header-text-color, #333);
+  font-size: 1.65em;
+  padding: 16px;
+}
+#__rptl-header .__rptl-header-nav-link:hover {
+  color: var(--rptl-header-background-color, #fff);
+  background-color: var(--rptl-header-text-color, #333);
+}
+#__rptl-header .__rptl-header-nav-link--for-home, #__rptl-header .__rptl-header-nav-link--for-industry {
+  font-weight: 700;
+}
+@media (min-width: 800px) {
+  #__rptl-header .__rptl-header-nav-link {
+    padding: 16px 76px;
+  }
+}
+@media (min-width: 1200px) {
+  #__rptl-header .__rptl-header-nav-link {
+    font-size: 1em;
+    padding: 16px;
+  }
+}
+
+#__rptl-cookiebanner {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  font-weight: 400;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 101;
+  background: var(--rptl-cookiebanner-background-color, #333);
+  color: var(--rptl-cookiebanner-text-color, #fff);
+}
+#__rptl-cookiebanner.__rptl-cookiebanner-hidden {
+  display: none;
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-wrapper {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+}
+@media (min-width: 800px) {
+  #__rptl-cookiebanner .__rptl-cookiebanner-wrapper {
+    padding: 16px 76px;
+  }
+}
+@media (min-width: 1200px) {
+  #__rptl-cookiebanner .__rptl-cookiebanner-wrapper {
+    padding: 16px 84px;
+  }
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-link:hover {
+  text-decoration: underline;
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-buttons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+@media (min-width: 640px) {
+  #__rptl-cookiebanner .__rptl-cookiebanner-buttons {
+    flex-direction: row;
+  }
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-accept, #__rptl-cookiebanner .__rptl-cookiebanner-reject {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  cursor: pointer;
+  border-radius: 9999px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-accept:hover, #__rptl-cookiebanner .__rptl-cookiebanner-reject:hover {
+  text-decoration: underline;
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-accept:focus, #__rptl-cookiebanner .__rptl-cookiebanner-reject:focus {
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(121, 167, 236) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-accept {
+  color: var(--rptl-cookiebanner-background-color, #333);
+  background: var(--rptl-cookiebanner-text-color, #fff);
+}
+#__rptl-cookiebanner .__rptl-cookiebanner-reject {
+  color: var(--rptl-cookiebanner-text-color, #fff);
+  background: var(--rptl-cookiebanner-background-color, #333);
+}
+</style>
+<header id="__rptl-header">
+  <input type="checkbox" class="__rptl-header-burger-state" id="__rptl-header-burger-state" />
+
+  <div class="__rptl-header-navbar">
+    <div class="__rptl-header-wrapper">
+      <a href="{{ site.url }}{{ site.baseurl }}" class="__rptl-header-brand">
+        <img class="__rptl-header-logo" src="{{ site.url }}{{ site.baseurl }}/logo.png" height="44"><span class="__rptl-header-logo-text">{{ site.title }}</span>
+      </a>
+
+      <label class="__rptl-header-burger" for="__rptl-header-burger-state">
+        <span class="__rptl-header-burger-stroke"></span>
+        <span class="__rptl-header-burger-stroke"></span>
+        <span class="__rptl-header-burger-stroke"></span>
+      </label>
+    </div>
+  </div>
+
+  <nav class="__rptl-header-nav">
+    <div class="__rptl-header-wrapper">
+      <div class="__rptl-header-nav-inner">
+        <ul class="__rptl-header-nav-list">
+          <li class="__rptl-header-nav-list-item"><a href="{{ site.chapter-link }}" class="__rptl-header-nav-link __rptl-header-nav-link--for-industry">{{ site.chapter-name }}</a>
+            <li class="__rptl-header-nav-list-item"><a href="{{ site.alumni-link }}" class="__rptl-header-nav-link __rptl-header-nav-link--for-industry">Alumni</a>
+          <li class="__rptl-header-nav-list-item"><a href="https://khk.org/" class="__rptl-header-nav-link __rptl-header-nav-link--for-home">National</a>
+        </ul>
+        <ul class="__rptl-header-nav-list">
+          {% for navitem in site.nav-list-right %}
+          <li class="__rptl-header-nav-list-item"><a href="{{ navitem.url }}" class="__rptl-header-nav-link" target="_blank">{{ navitem.title }}</a>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
