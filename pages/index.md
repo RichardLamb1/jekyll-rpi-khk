@@ -20,7 +20,7 @@ This theme was originally forked from the [Raspberry Pi Documentation](https://g
 ### My use case
 I forked this theme with the intent of hosting documentation on how to run a chapter of [KHK](https://khk.org/). As a member of the Delta chapter, I thought that at the time, our documentation was disorganized, scattered, outdated, and sometimes even nonexistant! Wanting a centralized, version-controlled wiki-style place for our documentation that all members of the fraternity can easily read and edit, I started to explore my options. With that, I started looking for Jekyll themes, but couldn't find any that met my requirements. So, here this is!
 
-For a demonstration of this theme's capabilities, check out the [sample page](/pages/sample-page).
+For a demonstration of this theme's capabilities, check out the [sample page](pages/sample-page).
 
 ## Getting Started
 *Assumes you're on a Linux computer or a Windows computer using the Windows Subsystem for Linux (WSL)*
