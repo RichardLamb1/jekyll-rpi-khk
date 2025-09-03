@@ -16,6 +16,7 @@ This theme was originally forked from the [Raspberry Pi Documentation](https://g
 - Changed the primary color from red to purple (for my use case)
 - Converted many hardcoded links and navigation panels into variables configurable in `_config.yml`
 - Added support for GitHub-style blockquotes
+- Replaced Algolia search with [Lunr](https://lunrjs.com/)
 
 ### My use case
 I forked this theme with the intent of hosting documentation on how to run a chapter of [KHK](https://khk.org/). As a member of the Delta chapter, I thought that at the time, our documentation was disorganized, scattered, outdated, and sometimes even nonexistant! Wanting a centralized, version-controlled wiki-style place for our documentation that all members of the fraternity can easily read and edit, I started to explore my options. With that, I started looking for Jekyll themes, but couldn't find any that met my requirements. So, here this is!

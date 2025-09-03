@@ -2,9 +2,13 @@
 [Raspberry Pi Documentation Website HTML, CSS, and JS](https://github.com/raspberrypi/documentation/) modified for my use case.
 
 ## To-Do's
-- Replace search
-  - The search bar is still using the Raspberry Pi Foundation's search. Need to replace it with our own.
 - Figure out the boxes layout
+
+## Changes Made
+- Changed the primary color from red to purple (for my use case)
+- Converted many hardcoded links and navigation panels into variables configurable in `_config.yml`
+- Added support for GitHub-style blockquotes
+- Replaced Algolia search with [Lunr](https://lunrjs.com/)
 
 ## Quick Start
 1. Clone the repository: `git clone https://github.com/RichardLamb1/jekyll-rpi-khk.git`
