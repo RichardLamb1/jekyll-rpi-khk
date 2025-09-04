@@ -20,7 +20,9 @@
                 <div class="mobile-menu-toggle-inner"></div>
               </label>
             </div>
-            <!-- Search was here -->
+            <div id="search-container">
+              {% include searchbox.html %}
+            </div>
           </div>
           <div class="toc">
           {% for subdir in site.data.nav %}

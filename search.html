@@ -1,82 +1,23 @@
 ---
+title: "Search"
 permalink: /search/
 layout: page
 ---
 
-<style>
-  #lunrsearch {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0 20px;
-  }
-  .lunrform {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    max-width: 800px;
-  }
-  .lunrinput {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    max-width: 800px;
-    padding-top: 65px;
-  }
-  #lunr-txt-container {
-    width: 100%;
-    min-width: 300px;
-    display: flex;
-    flex: 1;
-  }
-  .form-control {
-    background-color: var(--rptl-footer-background-color);
-    border: var(--rptl-footer-background-color);
-    color: var(--textcolor);
-  }
-  #lunr-txt.form-control {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-  }
-  #lunr-btn.form-control {
-    padding: 8px 16px;
-    font-size: 16px;
-  }
-  #lunr-btn.form-control:hover {
-    color: var(--rptl-header-background-color);
-    background-color: var(--textcolor);
-  }
-  #lunrsearchresults {
-    padding-top: 2rem;
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-  #lunrsearchresults ul {
-    list-style-type: none;
-    margin-top: 2rem;
-    padding-left: 0;
-  }
-  .lunrsearchresult {
-    padding-bottom: 2rem;
-  }
-  .lunrsearchresult .title {
-    color: var(--accent);
-  }
-  .lunrsearchresult .url {
-    color: var(--brand-colour);
-  }
-  .lunrsearchresult a {
-    display: block;
-    color: var(--textcolor);
-  }
-  .lunrsearchresult a:hover, .lunrsearchresult a:focus {
-    text-decoration: none;
-  }
-  .lunrsearchresult a:hover .title {
-    text-decoration: underline;
-  }
-</style>
+<script>
+  function autoSearch() {
+    // Performs a search automatically if the 'q' parameter is specified in the URL
+    let search_textbox = document.getElementById("lunr-txt");
+    let params = new URLSearchParams(document.location.search);
+    let query = params.get("q");
+    search_textbox.focus(); // focus the textbox so the user doesn't have to manually click it
+    if (query != null) {
+      search_textbox.setRangeText(query);
+      return lunr_search(document.getElementById('lunr-txt').value);
+    }
+}
+document.addEventListener("DOMContentLoaded", autoSearch);
+</script>
 
 <div class="search-container">
 {% include search-lunr.html %}

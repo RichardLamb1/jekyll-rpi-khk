@@ -53,10 +53,84 @@ function lunr_search(term) {
 }
 </script>
 
+<style>
+  #lunrsearch {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .lunrform {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+  }
+  .lunrinput {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    padding-top: 65px;
+  }
+  #lunr-txt-container {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex: 1;
+  }
+  .form-control {
+    background-color: var(--rptl-footer-background-color);
+    border: var(--rptl-footer-background-color);
+    color: var(--textcolor);
+  }
+  #lunr-txt.form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  #lunr-btn.form-control {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+  #lunr-btn.form-control:hover {
+    color: var(--accent);
+  }
+  #lunrsearchresults {
+    padding-top: 2rem;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  #lunrsearchresults ul {
+    list-style-type: none;
+    margin-top: 2rem;
+    padding-left: 0;
+  }
+  .lunrsearchresult {
+    padding-bottom: 2rem;
+  }
+  .lunrsearchresult .title {
+    color: var(--accent);
+  }
+  .lunrsearchresult .url {
+    color: var(--brand-colour);
+  }
+  .lunrsearchresult a {
+    display: block;
+    color: var(--textcolor);
+  }
+  .lunrsearchresult a:hover, .lunrsearchresult a:focus {
+    text-decoration: none;
+  }
+  .lunrsearchresult a:hover .title {
+    text-decoration: underline;
+  }
+</style>
+
 <div id="lunrsearch">
     <form class="lunrform" id="lunrform" onSubmit="return lunr_search(document.getElementById('lunr-txt').value);">
         <div class="lunrinput">
-            <span id="lunr-txt-container"><input type="search" class="form-control" id="lunr-txt" name="q" maxlength="255" value="" placeholder="Search..." enterkeyhint="go" /></span>
+            <span id="lunr-txt-container"><input type="search" class="form-control" id="lunr-txt" name="q" maxlength="255" value="" placeholder="Search..." aria-label="Search this site" enterkeyhint="go" spellcheck="false" /></span>
             <span id="lunr-btn-container"><button type="submit" class="form-control" id="lunr-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="3 2 10 10"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/></svg></button></span>
         </div>
     </form>

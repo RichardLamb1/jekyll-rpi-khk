@@ -1,0 +1,42 @@
+<style>
+  .searchform {
+    display: flex;
+    width: 100%;
+    padding: 0 5px;
+    align-self: center;
+  }
+  .searchinput {
+    display: flex;
+    flex: 1;
+    width: 100%;
+  }
+  #search-txt-container {
+    width: 100%;
+    display: flex;
+    flex: 1;
+  }
+  .form-control {
+    background-color: var(--code-bg-colour);
+    border: var(--code-bg-colour);
+    color: var(--textcolor);
+  }
+  #search-txt.form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  #search-btn.form-control {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+  #search-btn.form-control:hover {
+    color: var(--accent);
+  }
+</style>
+
+<form class="searchform" id="searchform" action="{{ site.url }}{{ site.baseurl }}/search">
+    <div class="searchinput">
+        <span id="search-txt-container"><input type="search" class="form-control" id="search-txt" name="q" maxlength="255" value="" placeholder="Search..." aria-label="Search this site" enterkeyhint="go" spellcheck="false" /></span>
+        <span id="search-btn-container"><button type="submit" class="form-control" id="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="3 2 10 10"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/></svg></button></span>
+    </div>
+</form>
