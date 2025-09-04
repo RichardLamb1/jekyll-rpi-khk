@@ -56,8 +56,8 @@ function lunr_search(term) {
 <div id="lunrsearch">
     <form class="lunrform" id="lunrform" onSubmit="return lunr_search(document.getElementById('lunr-txt').value);">
         <div class="lunrinput">
-            <span id="lunr-txt-container"><input type="search" class="form-control" id="lunr-txt" name="q" maxlength="255" value="" placeholder="Search..." /></span>
-            <span id="lunr-btn-container"><button type="submit" class="form-control" id="lunr-btn">&#129130;</button></span>
+            <span id="lunr-txt-container"><input type="search" class="form-control" id="lunr-txt" name="q" maxlength="255" value="" placeholder="Search..." enterkeyhint="go" /></span>
+            <span id="lunr-btn-container"><button type="submit" class="form-control" id="lunr-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="3 2 10 10"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/></svg></button></span>
         </div>
     </form>
 </div>
